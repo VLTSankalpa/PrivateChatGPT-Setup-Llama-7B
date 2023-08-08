@@ -165,6 +165,11 @@ pip install -r requirements.txt
 huggingface-cli login
 # Follow on-screen prompts to enter your Hugging Face token
 
+```bash
+python llama.py --model_name="meta-llama/Llama-2-7b-chat-hf"
+
+```
+
 ```
 
 Run Llama:
