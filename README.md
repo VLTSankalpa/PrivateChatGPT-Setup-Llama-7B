@@ -2,10 +2,13 @@
 
 This repository showcases my comprehensive guide to deploying the Llama2-7B model on Google Cloud VM, using NVIDIA GPUs. As an open-source alternative to commercial LLMs such as OpenAI's GPT and Google's Palm. By setting up your own private LLM instance with this guide, you can benefit from its capabilities while prioritizing data confidentiality.
 
-## **Prerequisites:**
+## **Hardware Requirements:**
 
-- Google Cloud VM: 24vCPU, 96Gb RAM, and 2*NVIDAN L4s (24Gb VRAM x 2)
-
+Google Cloud VM: 
+- 24 vCPU
+- 96 Gb RAM
+- 2 x NVIDAN L4 (24Gb VRAM x 2)
+- 250 Gb SSD
 # Llama 2 Models by Meta
 
 The Llama models, developed by MetaAI, are a series of breakthroughs in open-source AI. 
