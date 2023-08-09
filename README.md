@@ -52,6 +52,42 @@ Check current NVIDIA status:
 nvidia-smi
 
 ```
+Output should be something like this.
+
+
+```bash
+
+tharindu_sankalpa@llama2-model-endpoint2:~$ nvidia-smi
+Tue Aug  8 16:45:14 2023
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 525.125.06   Driver Version: 525.125.06   CUDA Version: 12.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA L4           Off  | 00000000:00:03.0 Off |                    0 |
+| N/A   61C    P8    19W /  72W |     70MiB / 23034MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA L4           Off  | 00000000:00:04.0 Off |                    0 |
+| N/A   61C    P8    19W /  72W |      4MiB / 23034MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A      1531      G   /usr/lib/xorg/Xorg                 59MiB |
+|    0   N/A  N/A      1590      G   /usr/bin/gnome-shell               10MiB |
+|    1   N/A  N/A      1531      G   /usr/lib/xorg/Xorg                  4MiB |
++-----------------------------------------------------------------------------+
+tharindu_sankalpa@llama2-model-endpoint2:~$
+tharindu_sankalpa@llama2-model-endpoint2:~$
+
+```
 
 Install the NVIDIA driver:
 
@@ -171,5 +207,5 @@ Run Llama:
 ```bash
 python llama.py --model_name="meta-llama/Llama-2-7b-chat-hf"
 ```
-
-
+![Alt text](UI.png)
+![Alt text](backend.png)
