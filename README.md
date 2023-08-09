@@ -1,4 +1,4 @@
-# **🚀 Setting Up Llama-7B on Google Cloud VM with NVIDIA**
+# **🚀 Setting Up Llama2-7B on Google Cloud VM with NVIDIA**
 
 This guide will help you to set up Llama-7B on your Google Cloud VM equipped with NVIDIA GPUs.
 
